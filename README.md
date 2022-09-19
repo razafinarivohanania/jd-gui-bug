@@ -4,6 +4,8 @@ It is a simple maven application in which there is a bug on JD-GUI when it attem
 There are two classes which are both `Message` as name but in separated package. The one is put in `package_1` and the second in `package_2`.
 In the `Main` class we create two variables from these both class and use them.
 
+Issue raised in https://github.com/java-decompiler/jd-gui/issues/404
+
 # Context
 
 Tested on JD-GUI `v1.6.6`
