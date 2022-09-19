@@ -16,12 +16,12 @@ When we create the .jar file from `mvn clean package` and open the .jar file in 
 package org.example;
 
 public class Main {
-    public static void main(String[] args) {
-        org.example.package_1.Message messageFromPackageOne = new Message("Message from package one");
-        System.out.println(messageFromPackageOne.getMessage());
-        org.example.package_2.Message messageFromPackageTwo = new Message("Message from package two");
-        System.out.println(messageFromPackageTwo.getMessage());
-    }
+  public static void main(String[] args) {
+    org.example.package_1.Message messageFromPackageOne = new Message("Message from package one");
+    System.out.println(messageFromPackageOne.getMessage());
+    org.example.package_2.Message messageFromPackageTwo = new Message("Message from package two");
+    System.out.println(messageFromPackageTwo.getMessage());
+  }
 }
 ```
 
@@ -44,5 +44,7 @@ public class Main {
   }
 }
 ```
+
+![Bug](img/bug.png)
 
 And in this result, we get conflict `Message` class. We don't know anymore if it belongs to `org.example.package_1` or `org.example.package_2`.
