@@ -16,12 +16,10 @@ When we create the .jar file from `mvn clean package` and open the .jar file in 
 package org.example;
 
 public class Main {
-
     public static void main(String[] args) {
         org.example.package_1.Message messageFromPackageOne = new Message("Message from package one");
         System.out.println(messageFromPackageOne.getMessage());
-
-        org.example.package_2.Message messageFromPackageTwo = new org.example.package_2.Message("Message from package two");
+        org.example.package_2.Message messageFromPackageTwo = new Message("Message from package two");
         System.out.println(messageFromPackageTwo.getMessage());
     }
 }
